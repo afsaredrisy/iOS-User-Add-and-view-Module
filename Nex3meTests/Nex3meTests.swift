@@ -11,24 +11,45 @@ import XCTest
 
 class Nex3meTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+ //MARK: user Class Tests
+    
+    // Confirm that the User initializer returns a Meal object when passed valid parameters.
+    func testUserInitializationSucceeds() {
+        
+        let img = UIImage()
+        //Zero rating test
+        let zeroRatingUser = User.init(name: "Zero", rating: 0, dp: img)
+        XCTAssertNotNil(zeroRatingUser)
+        
+         //Highest rating test
+        let positivwRating = User.init(name: "High", rating: 5, dp: img)
+        XCTAssertNotNil(positivwRating)
+        
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
+        // Confirm that the User initialier returns nil when passed a negative rating or an empty name.
+        func testUserInitializationFails() {
+              let img = UIImage()
+            
+            //Negative Rating test
+            let negativeRating = User.init(name: "Negative", rating: -2, dp: img)
+            XCTAssertNil(negativeRating)
+            
+            
+            //Empty String test
+            
+            let emptyName = User.init(name: "", rating: 2, dp: img)
+            XCTAssertNil(emptyName)
+            
+            
+            
+            //Rating exceed 5
+            let exceedRating = User.init(name: "valid", rating: 8, dp: img)
+            XCTAssertNil(exceedRating)
+            
+        
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+    
+    
 
 }

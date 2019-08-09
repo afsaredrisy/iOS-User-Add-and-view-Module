@@ -14,6 +14,8 @@
 		BA51330922FC2BA800AD4090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA51330722FC2BA800AD4090 /* LaunchScreen.storyboard */; };
 		BA51331422FC2BA900AD4090 /* Nex3meTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA51331322FC2BA900AD4090 /* Nex3meTests.swift */; };
 		BA51331F22FC2BA900AD4090 /* Nex3meUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA51331E22FC2BA900AD4090 /* Nex3meUITests.swift */; };
+		BA88C24E22FD9DF3006E8F00 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88C24D22FD9DF3006E8F00 /* User.swift */; };
+		BAA1A09422FD7F5600F187E5 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA1A09322FD7F5600F187E5 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		BA51331A22FC2BA900AD4090 /* Nex3meUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Nex3meUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA51331E22FC2BA900AD4090 /* Nex3meUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nex3meUITests.swift; sourceTree = "<group>"; };
 		BA51332022FC2BA900AD4090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA88C24D22FD9DF3006E8F00 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BAA1A09322FD7F5600F187E5 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 				BA5132FC22FC2B9B00AD4090 /* Products */,
 			);
 			sourceTree = "<group>";
+			wrapsLines = 0;
 		};
 		BA5132FC22FC2B9B00AD4090 /* Products */ = {
 			isa = PBXGroup;
@@ -99,6 +104,8 @@
 			children = (
 				BA5132FE22FC2B9B00AD4090 /* AppDelegate.swift */,
 				BA51330022FC2B9B00AD4090 /* ViewController.swift */,
+				BA88C24D22FD9DF3006E8F00 /* User.swift */,
+				BAA1A09322FD7F5600F187E5 /* RatingControl.swift */,
 				BA51330222FC2B9B00AD4090 /* Main.storyboard */,
 				BA51330522FC2BA800AD4090 /* Assets.xcassets */,
 				BA51330722FC2BA800AD4090 /* LaunchScreen.storyboard */,
@@ -256,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA88C24E22FD9DF3006E8F00 /* User.swift in Sources */,
 				BA51330122FC2B9B00AD4090 /* ViewController.swift in Sources */,
+				BAA1A09422FD7F5600F187E5 /* RatingControl.swift in Sources */,
 				BA5132FF22FC2B9B00AD4090 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,7 +442,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4Z252APR8;
 				INFOPLIST_FILE = Nex3me/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +461,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4Z252APR8;
 				INFOPLIST_FILE = Nex3me/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +481,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4Z252APR8;
 				INFOPLIST_FILE = Nex3meTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,6 +502,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4Z252APR8;
 				INFOPLIST_FILE = Nex3meTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -507,6 +522,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4Z252APR8;
 				INFOPLIST_FILE = Nex3meUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,6 +542,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4Z252APR8;
 				INFOPLIST_FILE = Nex3meUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
